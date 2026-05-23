@@ -1,0 +1,22 @@
+.a {
+  width: 30%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+body {
+  background-color: burlywood;
+}
+.container {
+  display: flex;        
+  align-items: center;  
+  gap: 30px;           
+  padding: 20px;
+}
+.main-image {
+  width: 400px;         
+  border-radius: 20px;  
+}
+.content {
+  max-width: 500px;     
+}

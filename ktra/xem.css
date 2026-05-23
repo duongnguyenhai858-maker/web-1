@@ -1,0 +1,9 @@
+.a {
+  width: 30%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+body {
+  background-color: burlywood;
+}

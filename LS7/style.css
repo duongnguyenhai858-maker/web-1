@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Background */
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.bg-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Thanh trợ giúp (Navbar) */
+.navbar {
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px); /* Hiệu ứng kính mờ */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #66c0f4; /* Màu xanh đặc trưng của Steam */
+}
+
+/* Layout nội dung chính */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px; /* Cách thanh navbar */
+    padding: 20px;
+}
+
+/* Nâng cấp các thẻ Box */
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Nền trong suốt */
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 0; /* Để ảnh khít viền trên */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Nhảy nhẹ lên khi di chuột */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.my-box1 { width: 400px; }
+.my-box2 { width: 400px; }
+
+.profile-photo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Giúp ảnh không bị méo */
+}
+
+h3 {
+    margin: 15px 0 5px 0;
+    font-size: 1.5rem;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
+}

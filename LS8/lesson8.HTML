@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="stylesheet" href="lesson8.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+</head>
+<body>
+
+    <form action="/submit" method="POST">
+        <h2>Đăng Ký Tài Khoản</h2>
+
+        <!-- Họ và Tên -->
+        <label for="fullname">Họ và Tên:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email" required>
+
+        <!-- Mật khẩu -->
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+
+        <!-- Số điện thoại -->
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+
+        <!-- Giới tính -->
+        <label>Giới tính:</label>
+        <div style="margin-bottom: 15px;">
+            <input type="radio" id="male" name="gender" value="male" style="width: auto;">
+            <label for="male" style="display: inline; font-weight: normal;">Nam</label>
+
+            <input type="radio" id="female" name="gender" value="female" style="width: auto; margin-left: 15px;">
+            <label for="female" style="display: inline; font-weight: normal;">Nữ</label>
+        </div>
+
+        <!-- Thành phố -->
+        <label for="city">Thành phố:</label>
+        <select id="city" name="city">
+            <option value="">-- Chọn thành phố --</option>
+            <option value="hanoi">Hà Nội</option>
+            <option value="hcm">TP. Hồ Chí Minh</option>
+            <option value="danang">Đà Nẵng</option>
+        </select>
+
+        <!-- Ghi chú -->
+        <label for="note">Ghi chú:</label>
+        <textarea id="note" name="note" rows="3" placeholder="Nhập ghi chú..."></textarea>
+
+        <!-- Đồng ý điều khoản -->
+        <div style="margin-bottom: 15px;">
+            <input type="checkbox" id="agree" name="agree" style="width: auto;" required>
+            <label for="agree" style="display: inline; font-weight: normal;">Tôi đồng ý với điều khoản</label>
+        </div>
+
+        <!-- Nút gửi -->
+        <button type="submit">Đăng Ký</button>
+    </form>
+
+</body>
+</html>

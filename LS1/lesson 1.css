@@ -1,0 +1,10 @@
+p {color:#ff0000}
+div p{color:blue}
+h1{color:brown;
+    background-color: burlywood;
+    text-align: center;
+    border:3px solid Tomato;
+    padding-left: 40px 0px 60px 60px;
+}
+div > p{color: teal;} 
+h2{font-weight: bold;}

@@ -1,0 +1,70 @@
+body {
+  background: #e0e5ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.a {
+  background: rgba(20, 30, 48, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.861);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #1896d0;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #0089ff;
+}
+
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Đẩy ảnh ra sau cùng */
+}
+
+.bg-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giữ tỷ lệ ảnh mà không bị méo */
+}
+.a,
+.b,
+.c {
+  display: inline;
+  font-weight: normal;
+  color:rgba(255, 255, 255, 0.861);
+}
